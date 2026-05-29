@@ -4,18 +4,24 @@
   <title>AI Study Assistant</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="container">
-  <h1>AI Study Assistant 🚀</h1>
+  <div class="container">
 
-  <input type="text" placeholder="Enter task">
+    <h1>AI Study Assistant 🚀</h1>
 
-  <button>Add Task</button>
-</div>
+    <div class="task-input">
+      <input type="text" id="taskInput" placeholder="Enter your task">
 
-<script src="script.js"></script>
+      <button onclick="addTask()">
+        Add Task
+      </button>
+    </div>
 
+    <ul id="taskList"></ul>
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
