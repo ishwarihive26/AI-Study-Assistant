@@ -1,25 +1,47 @@
 body{
   background:#111;
   color:white;
-  font-family:Arial;
+  font-family:Arial, sans-serif;
   display:flex;
   justify-content:center;
   align-items:center;
-  height:100vh;
+  min-height:100vh;
+  margin:0;
 }
 
 .container{
+  width:700px;
+  max-width:90%;
   text-align:center;
-  width:400px;
 }
 
 h1{
   margin-bottom:20px;
 }
 
+.dashboard{
+  display:flex;
+  gap:15px;
+  margin-bottom:20px;
+}
+
+.card{
+  flex:1;
+  background:#222;
+  padding:15px;
+  border-radius:10px;
+}
+
+.card h3{
+  margin:0;
+  color:cyan;
+  font-size:28px;
+}
+
 .task-input{
   display:flex;
   gap:10px;
+  margin-bottom:15px;
 }
 
 input{
@@ -27,6 +49,7 @@ input{
   padding:10px;
   border:none;
   outline:none;
+  border-radius:5px;
 }
 
 button{
@@ -35,18 +58,19 @@ button{
   border:none;
   cursor:pointer;
   font-weight:bold;
+  border-radius:5px;
 }
 
 ul{
   list-style:none;
   padding:0;
-  margin-top:20px;
 }
 
 li{
   background:#222;
   padding:10px;
   margin-top:10px;
+  border-radius:5px;
   display:flex;
   justify-content:space-between;
   align-items:center;
@@ -58,4 +82,9 @@ li{
   border:none;
   padding:5px 10px;
   cursor:pointer;
+  border-radius:5px;
+}
+
+h2{
+  margin-top:30px;
 }

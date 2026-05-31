@@ -1,28 +1,47 @@
-function addTask(){
+function addStudyPlan() {
 
-  const input = document.getElementById("taskInput");
+  const subject =
+    document.getElementById("subjectInput").value;
 
-  const taskText = input.value;
+  const hours =
+    document.getElementById("hoursInput").value;
 
-  if(taskText === ""){
-    alert("Please enter a task");
+  if(subject === "" || hours === "")
     return;
-  }
 
-  const li = document.createElement("li");
+  studyPlans.push({
+    subject,
+    hours
+  });
 
-  li.innerHTML = `
-    ${taskText}
-    <button class="delete-btn" onclick="deleteTask(this)">
-      Delete
-    </button>
-  `;
+  renderStudyPlans();
 
-  document.getElementById("taskList").appendChild(li);
-
-  input.value = "";
+  document.getElementById("subjectInput").value = "";
+  document.getElementById("hoursInput").value = "";
 }
 
-function deleteTask(button){
-  button.parentElement.remove();
+function renderStudyPlans() {
+
+  const studyList =
+    document.getElementById("studyList");
+
+  studyList.innerHTML = "";
+
+  let totalHours = 0;
+
+  studyPlans.forEach(plan => {
+
+    totalHours += Number(plan.hours);
+
+    const li = document.createElement("li");
+
+    li.innerHTML =
+      `${plan.subject} - ${plan.hours} hrs`;
+
+    studyList.appendChild(li);
+
+  });
+
+  document.getElementById("studyHours")
+    .innerText = totalHours;
 }

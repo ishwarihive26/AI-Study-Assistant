@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Study Assistant</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -10,18 +12,40 @@
 
     <h1>AI Study Assistant 🚀</h1>
 
+    <div class="dashboard">
+
+      <div class="card">
+        <h3 id="taskCount">0</h3>
+        <p>Tasks</p>
+      </div>
+
+      <div class="card">
+        <h3 id="studyHours">0</h3>
+        <p>Study Hours</p>
+      </div>
+
+    </div>
+
     <div class="task-input">
       <input type="text" id="taskInput" placeholder="Enter your task">
-
-      <button onclick="addTask()">
-        Add Task
-      </button>
+      <button onclick="addTask()">Add Task</button>
     </div>
 
     <ul id="taskList"></ul>
 
+    <h2>Study Planner</h2>
+
+    <div class="task-input">
+      <input type="text" id="subjectInput" placeholder="Subject Name">
+      <input type="number" id="hoursInput" placeholder="Hours">
+      <button onclick="addStudyPlan()">Add</button>
+    </div>
+
+    <ul id="studyList"></ul>
+
   </div>
 
   <script src="script.js"></script>
+
 </body>
 </html>
