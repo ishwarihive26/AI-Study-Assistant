@@ -13,6 +13,7 @@
   --radius:24px;
 }
 
+
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
@@ -27,6 +28,7 @@ body{
   overflow-x:hidden;
 }
 
+
 body.light{
   --bg:#f5f7fb;
   --panel:rgba(255,255,255,0.72);
@@ -39,6 +41,7 @@ body.light{
     radial-gradient(circle at top right, rgba(139,92,246,.12), transparent 28%),
     linear-gradient(135deg, #f7faff, #eef4ff 55%, #f8fafc);
 }
+
 
 .bg-blur{
   position:fixed;
@@ -53,6 +56,7 @@ body.light{
 .bg1{background:#38bdf8; top:-120px; left:-120px}
 .bg2{background:#8b5cf6; bottom:-120px; right:-120px}
 
+
 .app{
   position:relative;
   z-index:1;
@@ -64,12 +68,14 @@ body.light{
   gap:22px;
 }
 
+
 .sidebar,.panel,.stat-card,.topbar{
   background:var(--panel);
   border:1px solid var(--line);
   backdrop-filter:blur(18px);
   box-shadow:var(--shadow);
 }
+
 
 .sidebar{
   border-radius:var(--radius);
@@ -82,11 +88,13 @@ body.light{
   top:24px;
 }
 
+
 .logo{
   display:flex;
   gap:14px;
   align-items:center;
 }
+
 
 .logo-icon{
   width:52px;
@@ -100,17 +108,20 @@ body.light{
   box-shadow:0 10px 24px rgba(56,189,248,.24);
 }
 
+
 .logo h2,.topbar h1,.panel h2{margin:0}
 .logo p,.topbar p,.hint,.side-info p,.panel-head span,.timer-mode{
   margin:0;
   color:var(--muted);
 }
 
+
 .nav{
   display:flex;
   flex-direction:column;
   gap:10px;
 }
+
 
 .nav a{
   text-decoration:none;
@@ -121,10 +132,12 @@ body.light{
   transition:.25s ease;
 }
 
+
 .nav a:hover,.nav a.active{
   background:rgba(56,189,248,.12);
   transform:translateX(4px);
 }
+
 
 .side-info{
   margin-top:auto;
@@ -133,6 +146,7 @@ body.light{
   background:var(--panel2);
   border:1px solid var(--line);
 }
+
 
 .progress{
   height:10px;
@@ -147,11 +161,13 @@ body.light{
   background:linear-gradient(90deg,var(--accent),var(--accent2));
 }
 
+
 .main{
   display:flex;
   flex-direction:column;
   gap:18px;
 }
+
 
 .topbar{
   border-radius:var(--radius);
@@ -163,17 +179,20 @@ body.light{
   flex-wrap:wrap;
 }
 
+
 .top-actions,.input-row,.chips,.quick-actions{
   display:flex;
   gap:10px;
   flex-wrap:wrap;
 }
 
+
 .stats-grid{
   display:grid;
   grid-template-columns:repeat(4,1fr);
   gap:18px;
 }
+
 
 .stat-card{
   border-radius:22px;
@@ -183,6 +202,7 @@ body.light{
 .stat-card:hover,.panel:hover{
   transform:translateY(-4px);
 }
+
 
 .stat-card span{
   color:var(--muted);
@@ -194,22 +214,27 @@ body.light{
   font-weight:900;
 }
 
+
 .content-grid{
   display:grid;
   grid-template-columns:repeat(12,1fr);
   gap:18px;
 }
 
+
 .panel{
   border-radius:24px;
   padding:20px;
 }
 
+
 #tasks{grid-column:span 6}
 #planner{grid-column:span 6}
 #pomodoro{grid-column:span 5}
 #notes{grid-column:span 4}
+#recommendations{grid-column:span 3}
 .tutor-panel{grid-column:span 3}
+
 
 .panel-head{
   display:flex;
@@ -219,13 +244,16 @@ body.light{
   margin-bottom:14px;
 }
 
+
 .input-row{
   margin-bottom:14px;
 }
 
+
 input,select,textarea,button{
   font:inherit;
 }
+
 
 input,select,textarea{
   width:100%;
@@ -237,14 +265,17 @@ input,select,textarea{
   outline:none;
 }
 
+
 body.light input,body.light select,body.light textarea{
   background:rgba(255,255,255,.95);
 }
+
 
 textarea{
   min-height:170px;
   resize:vertical;
 }
+
 
 button{
   border:none;
@@ -252,11 +283,13 @@ button{
   transition:.22s ease;
 }
 
+
 .primary-btn,.ghost-btn,.danger-btn,.chips button,.quick-actions button{
   border-radius:14px;
   padding:12px 14px;
   font-weight:700;
 }
+
 
 .primary-btn{
   color:white;
@@ -272,11 +305,14 @@ button{
   background:linear-gradient(135deg,var(--bad),#b91c1c);
 }
 
+
 .small{padding:9px 12px}
+
 
 .primary-btn:hover,.ghost-btn:hover,.danger-btn:hover,.chips button:hover,.quick-actions button:hover{
   transform:translateY(-2px);
 }
+
 
 .list{
   display:flex;
@@ -286,6 +322,7 @@ button{
   overflow:auto;
   padding-right:4px;
 }
+
 
 .item{
   display:flex;
@@ -298,10 +335,12 @@ button{
   border:1px solid var(--line);
 }
 
+
 .item.done{
   opacity:.65;
   text-decoration:line-through;
 }
+
 
 .tag{
   display:inline-flex;
@@ -313,6 +352,7 @@ button{
   color:#7dd3fc;
   font-size:.8rem;
 }
+
 
 .timer-box{
   text-align:center;
@@ -326,8 +366,10 @@ button{
 }
 .timer-mode{margin-bottom:8px}
 
+
 .center{justify-content:center}
 .chips{margin-top:14px; justify-content:center}
+
 
 .chat-box{
   height:250px;
@@ -338,6 +380,7 @@ button{
   background:rgba(2,6,23,.3);
   border:1px solid var(--line);
 }
+
 
 .msg{
   padding:11px 13px;
@@ -355,6 +398,7 @@ button{
   margin-left:18px;
 }
 
+
 .live-dot{
   color:#86efac;
 }
@@ -369,15 +413,89 @@ button{
   box-shadow:0 0 0 6px rgba(34,197,94,.12);
 }
 
+
+/* Recommendation system styles */
+.recommendation-card{
+  background:rgba(56,189,248,.08);
+  border:1px solid rgba(56,189,248,.18);
+  border-radius:14px;
+  padding:14px;
+  margin-bottom:10px;
+  transition:.25s ease;
+}
+.recommendation-card:hover{
+  background:rgba(56,189,248,.12);
+  transform:translateY(-2px);
+}
+.recommendation-card.priority-high{
+  border-left:4px solid var(--bad);
+  background:rgba(239,68,68,.08);
+}
+.recommendation-card.priority-medium{
+  border-left:4px solid var(--accent);
+}
+.recommendation-card.priority-low{
+  border-left:4px solid var(--good);
+  background:rgba(34,197,94,.08);
+}
+.rec-title{
+  font-weight:700;
+  margin-bottom:6px;
+  color:var(--text);
+}
+.rec-desc{
+  font-size:0.85rem;
+  color:var(--muted);
+  margin-bottom:8px;
+}
+.rec-badge{
+  display:inline-block;
+  padding:4px 10px;
+  border-radius:999px;
+  font-size:0.75rem;
+  font-weight:600;
+}
+.rec-badge.streak{
+  background:rgba(34,197,94,.15);
+  color:#86efac;
+}
+.rec-badge.activity{
+  background:rgba(139,92,246,.15);
+  color:#c4b5fd;
+}
+.rec-badge.urgent{
+  background:rgba(239,68,68,.15);
+  color:#fca5a5;
+}
+
+
 @media (max-width:1200px){
   .stats-grid{grid-template-columns:repeat(2,1fr)}
-  #tasks,#planner,#pomodoro,#notes,.tutor-panel{grid-column:span 12}
+  #tasks,#planner,#pomodoro,#notes,#recommendations,.tutor-panel{grid-column:span 12}
   .app{grid-template-columns:1fr}
   .sidebar{position:relative; top:0; min-height:auto}
 }
+
 
 @media (max-width:720px){
   .topbar,.panel-head,.input-row{flex-direction:column; align-items:stretch}
   .stats-grid{grid-template-columns:1fr}
   .timer-display{font-size:3rem}
 }
+
+
+/* SMALL CHANGE - Add this at the END of your CSS */
+
+#recommendations{grid-column:span 3}
+
+.recommendation-card{
+  background:rgba(56,189,248,.08);
+  border:1px solid rgba(56,189,248,.18);
+  border-left:4px solid var(--accent);
+  border-radius:14px;
+  padding:12px;
+  margin-bottom:10px;
+}
+.rec-title{font-weight:700;font-size:0.9rem;margin-bottom:6px}
+.rec-desc{font-size:0.8rem;color:var(--muted);margin-bottom:8px}
+.rec-badge{display:inline-block;padding:3px 8px;border-radius:999px;font-size:0.7rem;background:rgba(34,197,94,.15);color:#86efac}
