@@ -52,11 +52,6 @@ Optimized for desktop, tablet, and mobile devices.
 * CSS3
 * JavaScript (ES6)
 
-## Storage
-
-* Browser Local Storage
-
----
 
 # Project Objectives
 
