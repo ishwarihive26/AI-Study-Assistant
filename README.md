@@ -42,7 +42,6 @@ Store user data directly in the browser without requiring a backend.
 
 Optimized for desktop, tablet, and mobile devices.
 
----
 
 # Technology Stack
 
