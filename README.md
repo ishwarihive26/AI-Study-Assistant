@@ -1,7 +1,6 @@
 # AI Study Assistant
 
 AI Study Assistant is a modern web application designed to help students manage their studies efficiently, improve productivity, and maintain consistent learning habits.
-
 Built using HTML, CSS, and JavaScript, the application combines study planning, task management, and productivity tools within a clean and responsive interface.
 
 ---
